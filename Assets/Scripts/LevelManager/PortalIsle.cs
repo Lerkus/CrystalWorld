@@ -46,7 +46,7 @@ public class PortalIsle : MonoBehaviour {
         GameStats.LoadCharStats = true;
 
         ObjectPool mr = ObjectPool.getObjectPool();
-        GameObject player = mr.getObject(ObjectPool.categorie.essential, (int)ObjectPool.essential.player);
+        Player player = mr.getObject(ObjectPool.categorie.essential, (int)ObjectPool.essential.player).GetComponent<Player>();
 
         GameStats.SaveCharSets(player);
 

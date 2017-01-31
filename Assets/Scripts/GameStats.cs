@@ -32,6 +32,8 @@ public static class GameStats {
 
     // other stuff
     public static int NumberOfKeys;
+    public static bool HasSplitter;
+    public static bool HasBluffer;
 
     public static void UpdateLevelSettings(int level)
     {
@@ -54,9 +56,9 @@ public static class GameStats {
         }
     }
 
-    public static void ReadCharStats(GameObject player)
+    public static void ReadCharStats(Player player)
     {
-        Stats stats = player.GetComponent<Stats>();
+        Stats stats = player.gameObject.GetComponent<Stats>();
 
         // load Player Stats
 
@@ -77,12 +79,15 @@ public static class GameStats {
 
         // other stuff
 
-        player.GetComponent<Player>().NumberSmallKeys = GameStats.NumberOfKeys;
+        player.NumberSmallKeys = GameStats.NumberOfKeys;
+        player.HasSplitter = GameStats.HasSplitter;
+        player.HasBluffer = GameStats.HasBluffer;
+
     }
 
-    public static void SaveCharSets(GameObject player)
+    public static void SaveCharSets(Player player)
     {
-        Stats stats = player.GetComponent<Stats>();
+        Stats stats = player.gameObject.GetComponent<Stats>();
 
         // save Player Stats
 
@@ -103,6 +108,8 @@ public static class GameStats {
 
         // other stuff
 
-        GameStats.NumberOfKeys = player.GetComponent<Player>().NumberSmallKeys;
+        GameStats.NumberOfKeys = player.NumberSmallKeys;
+        GameStats.HasSplitter = player.HasSplitter;
+        GameStats.HasBluffer = player.HasBluffer;
     }
 }

@@ -18,11 +18,6 @@ public class Spider : Enemy
         }
     }
 
-    public void Start()
-    {
-        gameObject.GetComponent<Stats>().possibleShotEffects.Add(new bluff());
-    }
-
     public override void Initialize(EnemyPoint enemyPoint, Vector3 islePosition, Vector3 navMeshPosition, NavMeshTarget target)
     {
         base.Initialize(enemyPoint, islePosition, navMeshPosition, target);

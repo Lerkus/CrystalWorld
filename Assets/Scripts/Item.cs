@@ -211,9 +211,9 @@ public class Item : MonoBehaviour {
                 }
                 break;
             case ContentTypeBig.Bluffer:
-                if (player.hasBluffer == false)
+                if (player.HasBluffer == false)
                 {
-                    player.hasBluffer = true;
+                    player.HasBluffer = true;
                     playerStats.possibleShotEffects.Add(new bluff());
                     ui.ShowMessage("You have Bluffer-Shots!");
                 }
@@ -228,8 +228,9 @@ public class Item : MonoBehaviour {
         ExplosionScript itemEffect = mr.getObject(ObjectPool.categorie.explosion, (int)ObjectPool.explosion.itemCollected).GetComponent<ExplosionScript>();
         itemEffect.Initialize(ContentObj.transform.position);
 
-        ExplosionScript heroEffect = mr.getObject(ObjectPool.categorie.explosion, (int)ObjectPool.explosion.itemCollectedHero).GetComponent<ExplosionScript>();
-        heroEffect.Initialize(player.transform.position);
+        GameObject heroEffect = mr.getObject(ObjectPool.categorie.explosion, (int)ObjectPool.explosion.itemCollectedHero);
+        heroEffect.GetComponent<ExplosionScript>().Initialize(player.transform.position);
+        heroEffect.GetComponent<Follow>().Initialize(player.gameObject);
 
         mr.returnObject(ContentObj);
         ContentObj = null;
@@ -293,8 +294,9 @@ public class Item : MonoBehaviour {
                 ExplosionScript itemEffect = mr.getObject(ObjectPool.categorie.explosion, (int)ObjectPool.explosion.itemCollected).GetComponent<ExplosionScript>();
                 itemEffect.Initialize(ContentObj.transform.position);
 
-                ExplosionScript heroEffect = mr.getObject(ObjectPool.categorie.explosion, (int)ObjectPool.explosion.itemCollectedHero).GetComponent<ExplosionScript>();
-                heroEffect.Initialize(player.transform.position);
+                GameObject heroEffect = mr.getObject(ObjectPool.categorie.explosion, (int)ObjectPool.explosion.itemCollectedHero);
+                heroEffect.GetComponent<ExplosionScript>().Initialize(player.transform.position);
+                heroEffect.GetComponent<Follow>().Initialize(player.gameObject);
 
                 mr.returnObject(ContentObj);
                 ContentObj = null;

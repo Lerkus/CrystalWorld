@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     [HideInInspector]
     public bool HasSplitter;
     [HideInInspector]
-    public bool hasBluffer;
+    public bool HasBluffer;
 
     [HideInInspector]
     public bool IsControllable = true;
