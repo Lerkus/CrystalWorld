@@ -87,13 +87,13 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0.807
     - first:
         name: _GlossyReflections
       second: 1
     - first:
         name: _Metallic
-      second: 0
+      second: 1
     - first:
         name: _Mode
       second: 0
@@ -121,7 +121,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.16202247, g: 0.82662517, b: 1, a: 0.7263158}
+      second: {r: 0.9808316, g: 0.8014706, b: 1, a: 0.7263158}
     - first:
         name: _EmissionColor
       second: {r: 0.04849696, g: 0.28676468, b: 0.16845249, a: 1}

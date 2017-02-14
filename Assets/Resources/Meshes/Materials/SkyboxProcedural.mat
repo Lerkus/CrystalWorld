@@ -75,7 +75,7 @@ Material:
       second: 0.5
     - first:
         name: _AtmosphereThickness
-      second: 0.6
+      second: 0.52
     - first:
         name: _BumpScale
       second: 1
@@ -90,7 +90,7 @@ Material:
       second: 1
     - first:
         name: _Exposure
-      second: 4
+      second: 4.92
     - first:
         name: _Glossiness
       second: 0
@@ -145,7 +145,7 @@ Material:
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _GroundColor
-      second: {r: 0.28584737, g: 0.25935337, b: 0.30147058, a: 1}
+      second: {r: 0.51603556, g: 0.3935986, b: 0.58823526, a: 1}
     - first:
         name: _SkyEquatorColor
       second: {r: 0.188311, g: 0.24798155, b: 0.31617647, a: 1}
@@ -154,7 +154,7 @@ Material:
       second: {r: 0.13327208, g: 0.16961901, b: 0.21323532, a: 1}
     - first:
         name: _SkyTint
-      second: {r: 0.5578093, g: 0.5233564, b: 0.58823526, a: 1}
+      second: {r: 0.9338235, g: 0.32958475, b: 0.917155, a: 1}
     - first:
         name: _SkyTopColor
       second: {r: 0.08742432, g: 0.11787318, b: 0.1544118, a: 1}
