@@ -32,7 +32,7 @@ public class PortalIsle : MonoBehaviour {
         if (level == 3)
         {
             // load End screen
-            SceneManager.LoadScene("Scenes/End");
+            SceneManager.LoadScene("Scenes/Ending");
             return;
         }
 

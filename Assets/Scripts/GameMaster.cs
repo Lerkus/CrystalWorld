@@ -107,7 +107,7 @@ public class GameMaster : MonoBehaviour {
 
         StopAllCoroutines();
 
-        SceneManager.LoadScene("Scenes/Main_Menue");
+        SceneManager.LoadScene("Scenes/Main");
     }
     
     public void ShowPauseMenue()

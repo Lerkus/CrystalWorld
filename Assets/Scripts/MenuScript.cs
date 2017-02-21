@@ -18,7 +18,7 @@ public class MenuScript : MonoBehaviour
     public void ReturnToMainMenu()
     {
         Time.timeScale = 1;
-        ChangeScene("Scenes/Main_Menue");
+        ChangeScene("Scenes/Main");
     }
 
     public void ExitPauseMenue()

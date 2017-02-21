@@ -13,7 +13,7 @@ public class EndScreen : MonoBehaviour {
     {
         yield return new WaitForSeconds(3);
 
-        SceneManager.LoadScene("Scenes/Main_Menue");
+        SceneManager.LoadScene("Scenes/Main");
 
         StopAllCoroutines();
     }
